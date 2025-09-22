@@ -12,7 +12,7 @@
 
     "modules-left":[  "custom/arch","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right":["clock","pulseaudio/slider"],
+    "modules-right":["clock","pulseaudio/slider","custom/power"],
 
     "pulseaudio/slider": {
       "min": 0,
@@ -47,4 +47,9 @@
         	"format": "  {icon} {capacity}%   ",
         	"format-icons": ["[ ▒▒▒▒▒ ]", "[ █▒▒▒▒ ]", "[ ██▒▒▒ ]", "[ ███▒▒ ]", "[ ████▒ ]","[ ███████ ]"]
 	},
+
+  "custom/power":{
+    "format": "⏻",
+    "on-click": "kitty"
+  }
 }
