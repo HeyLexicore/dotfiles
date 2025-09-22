@@ -1,0 +1,121 @@
+* {
+   /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono Nerd Font Propo, otf-font-awesome;
+    font-size: 16px;
+    transition-duration: 0s;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(86, 98, 107, 0.5);
+    border-radius: 3px;
+    color: #ffffff;
+    transition-property: background-color;
+    
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+#workspaces button:hover {
+    background-color: rgba(69, 69, 69, 0.274);
+    padding: 0px 20px;
+
+    border: 1px solid transparent;
+}
+
+
+#workspaces button.active {
+    border: 3px solid rgba(86, 98, 107, 0.5);
+    background-color: rgba(69, 69, 69, 0.274);
+    padding: 0px 18px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    padding: 0 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#clock,
+#window,
+#workspaces 
+{
+  
+    background-color: rgba(69, 69, 69, 0.274);
+    border-radius: 6px;
+    border: 3px solid rgba(86, 98, 107, 0.5);
+
+    font-size: 16px;
+    padding: 0px;
+    margin: 6 5px;
+}
+#window {
+    padding: 0 40px;
+}
+#clock {
+    padding: 0px 20px;
+  }
+
+
+#custom-arch{
+    border: transparent;
+    border-radius: 5px;
+
+    font-size: 16px;
+    margin: 0 18px 0 30px;
+}
+
+#custom-arch {
+    font-size: 30px;
+}
+
+#battery{
+    letter-spacing: 0.1em;
+}
+
+
+#pulseaudio-slider {
+    padding: 0;
+    margin: 0;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    background-image: none;
+    background-color: black;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: green;
+}

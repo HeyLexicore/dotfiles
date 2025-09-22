@@ -1,0 +1,50 @@
+ 
+{
+    "layer": "top",
+    "position": "top",
+    "height": 55,
+    "spacing": 4,
+    "margin-top": 10,
+    "margin-bottom": 2,
+    "margin-left": 10,
+    "margin-right": 10,
+
+
+    "modules-left":[  "custom/arch","hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right":["clock","pulseaudio/slider"],
+
+    "pulseaudio/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "horizontal"
+    },
+    "custom/arch":{
+        "format": "󰣇"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "1":[],
+            "2":[],
+            "3":[],
+            "4":[],
+            "5":[]
+        }
+    },
+    "clock":{
+        "format":"{:%H:%M:%S %a %B %d/%m}",
+        "interval":1
+    },
+    
+  "memory": {
+    "interval": 1,
+    "format": "{used:0.01f}",
+    "on-click": "kitty btop"
+  },
+  
+	"battery": {
+        	"format": "  {icon} {capacity}%   ",
+        	"format-icons": ["[ ▒▒▒▒▒ ]", "[ █▒▒▒▒ ]", "[ ██▒▒▒ ]", "[ ███▒▒ ]", "[ ████▒ ]","[ ███████ ]"]
+	},
+}
