@@ -1,0 +1,35 @@
+* {
+    background-color: rgba(0, 0, 0, 0.2);   /* #00000033 */
+      /* semi-transparent border */
+    text-color: rgb(255,255,255);
+    font: "JetBrainsMono Nerd Font 16";
+}
+
+window {
+    transparency: "real";    /* allows RGBA */
+    border: 3px;
+    border-radius: 3px;
+    border-color: rgba(68, 98, 107, 0.5);
+    padding: 10px;
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+listview {
+    background-color: transparent;
+    lines: 8;
+    fixed-height: false;
+}
+
+element {
+    background-color: transparent;
+    padding: 5px;
+}
+
+element selected {
+    background-color: rgba(68, 98, 107, 0.3);
+    text-color: #ffffff;
+}
+
