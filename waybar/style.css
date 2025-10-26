@@ -62,7 +62,8 @@ window#waybar.chromium {
 #clock,
 #window,
 #workspaces,
-#custom-power
+#custom-power,
+#custom-volume
 {
   
     background-color: rgba(69, 69, 69, 0.274);
@@ -73,7 +74,7 @@ window#waybar.chromium {
     padding: 0px;
     margin: 6 5px;
 }
-
+#custom-volume,
 #custom-power {
 
   padding: 10 15px;

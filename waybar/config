@@ -12,7 +12,7 @@
 
     "modules-left":[  "custom/arch","hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right":["clock","pulseaudio/slider","custom/power"],
+    "modules-right":["clock","custom/volume","custom/power"],
 
     "pulseaudio/slider": {
       "min": 0,
@@ -49,7 +49,17 @@
 	},
 
   "custom/power":{
-    "format": "⏻",
-    "on-click": "kitty"
+    "format": "",
+    "on-click": "bluetoothctl connect F4:9D:8A:2A:60:BC"
+  },
+  "custom/volume": {
+    "format": "{}",
+    "return-type": "json",
+    "tooltip": false,
+    "interval": 1,
+    "exec": "~/.config/waybar/scripts/volume.sh",
+    "on-scroll-up": "~/.config/waybar/scripts/volume.sh up",
+    "on-scroll-down": "~/.config/waybar/scripts/volume.sh down"
   }
+
 }

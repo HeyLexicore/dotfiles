@@ -1,6 +1,13 @@
 configuration {
+ 
+  modi: "drun";
+  display-drun: "";
   font: "JetBrainsMono Nerd Font Propo 16";
   show-icons: true;
+  
+ 
+  disable-history: false;
+  history-action-sort: true;
 }
 @theme "~/.config/rofi/theme.rasi"
 
